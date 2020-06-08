@@ -103,5 +103,63 @@ Widget _titulos() {
     ),
   );
 }
+
+Widget _cardTipo2() {
+
+    return Card(
+      elevation: 10.0,
+      shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(20.0) ),
+      child: Column(
+        children: <Widget>[
+          ListTile(
+            leading: Icon( Icons.photo_album, color: Colors.blue ),
+            title: Text('Aviso'),
+            subtitle: Text('El valor actual de la humedad es el siguiente:'),
+            //subtitle: Text('[H_controller]'),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              FlatButton(
+                child: Text('Ver Más...'),
+            onPressed: () {
+              },
+            )
+          ],
+        )
+      ],
+    ),
+  );
+}
+
+Widget _cardTipo3() {
+
+    return Card(
+      elevation: 10.0,
+      shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(20.0) ),
+      child: Column(
+        children: <Widget>[
+          ListTile(
+            leading: Icon( Icons.photo_album, color: Colors.blue ),
+            title: Text('Aviso'),
+            subtitle: Text('El valor actual de la temperatura es el siguiente:'),
+            //subtitle: Text('[T_controller]'),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              FlatButton(
+                child: Text('Ver Más...'),
+            onPressed: () {
+              },
+            )
+          ],
+        )
+      ],
+    ),
+  );
+}
+
+
 }
 
